@@ -1,0 +1,46 @@
+
+<html>
+  <head>
+    <title>A Multiplayer Game</title>
+    <style>
+      canvas {
+        width: 800px;
+        height: 600px;
+        border: 5px solid black;
+      }
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    
+    <canvas id="canvas"></canvas>
+  </body>
+  
+  <div class="col px-1">
+    <ul id="gamebroadcasts"></ul>
+    <input type="text" class="form-control" id="textmessage" placeholder="Your message" name="textmessage">
+    <ul id="resultsList">
+  
+    </ul>
+    <br>
+    <p>My items</p>
+    <button id="blueroom">Go to Blue room</button>
+    <button id="whiteroom">Go to White room</button>
+    <div id="playerrooms">
+      
+    </div>
+    <ul id="inventory">
+
+    </ul>
+      
+      <p>My shop:</p>
+      <div id="myShop">
+      
+      </div>
+      <div id="tradeOptions">
+        
+      </div>
+      <p id="coincount">500</p>
+   </div>
+  <script type="module" src="/static/game.js"></script>
+</html>
